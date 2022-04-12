@@ -106,9 +106,6 @@ function App() {
         method: "post",
         url: "/user/upload",
         data: formData,
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
       })
         .then((res) => {
           if (res.data.success) {
@@ -223,6 +220,10 @@ function App() {
             </label>
           </FormControl>
         </Box>
+        <footer className="footer">
+          <span>&copy;2022 Maxtune & CXY</span><br/>
+          <span>Powered by 🌩️SAST Cloud</span>
+        </footer>
       </Container>
     </Fragment>
   );
